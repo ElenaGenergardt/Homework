@@ -1,0 +1,65 @@
+package model;
+
+/**
+ * Класс, представляющий категорию товара.
+ */
+public class Category {
+    /**
+     * Уникальный идентификатор категории.
+     */
+    private long id;
+    /**
+     * Название категории.
+     */
+    private String title;
+    /**
+     * Конструктор по умолчанию.
+     */
+    public Category() {
+    }
+    /**
+     * Конструктор с параметрами.
+     *
+     * @param id    уникальный идентификатор категории.
+     * @param title название категории.
+     */
+    public Category(long id, String title) {
+        this.id = id;
+        this.title = title;
+    }
+
+    /**
+     * Возвращает уникальный идентификатор категории.
+     *
+     * @return уникальный идентификатор категории.
+     */
+
+    public long getId() {
+        return id;
+    }
+    /**
+     * Устанавливает уникальный идентификатор категории.
+     *
+     * @param id уникальный идентификатор категории.
+     */
+    public void setId(long id) {
+        this.id = id;
+    }
+    /**
+     * Возвращает название категории.
+     *
+     * @return название категории.
+     */
+    public String getTitle() {
+        return title;
+    }
+
+    /**
+     * Устанавливает название категории.
+     *
+     * @param title название категории.
+     */
+    public void setTitle(String title) {
+        this.title = title;
+    }
+}
