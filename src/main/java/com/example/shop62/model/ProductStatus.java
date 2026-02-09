@@ -1,4 +1,4 @@
-package model;
+package com.example.shop62.model;
 /**
  * Перечисление, представляющее статус товара.
  */
@@ -15,5 +15,4 @@ public enum ProductStatus {
      * Снят с производства.
      */
     DEPRECATED
-
 }

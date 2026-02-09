@@ -1,6 +1,6 @@
-package repository;
+package com.example.shop62.repository;
 
-import model.User;
+import com.example.shop62.model.User;
 
 import java.util.List;
 
@@ -54,5 +54,4 @@ public interface UserRepository {
      * @return удаленный пользователь или null, если пользователь не найден.
      */
     User delete(long id);
-
 }

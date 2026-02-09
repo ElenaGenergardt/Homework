@@ -1,11 +1,10 @@
+package com.example.shop62;
 
-import model.Role;
-import model.User;
-import repository.UserRepository;
-import repository.UserRepositoryMap;
+import com.example.shop62.model.Role;
+import com.example.shop62.model.User;
+import com.example.shop62.service.UserService;
 
 import java.time.LocalDateTime;
-import java.util.Scanner;
 
 /**
  * Демонстрационный класс для работы с магазином.
@@ -27,21 +26,28 @@ public class ShopDemo {
         );
 
         // Репозиторий пользователей
-        UserRepository userRepository = new UserRepositoryMap();
+//        UserRepository userRepository = new UserRepositoryMap();
 
 //        userRepository.save(admin);
 
-        // Чтение данных с консоли
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("Input email:");
-//        String email = scanner.nextLine();
-
-        // Создание менеджера
-//        User manager = new User();
-//        manager.setEmail(email);
 
         // Проверка содержимого хранилища
-        userRepository.getAll().forEach(System.out::println);
+//        userRepository.getAll().forEach(System.out::println);
 
+
+//        User user = userRepository.findById(789L).orElse(null);
     }
+
+    // IoC
+    // 1. Традиционный подход
+    // Приложение -> создает зависимости -> использование
+
+    // 2. IoC
+    // Контейнер -> создает зависимости -> внедряет в приложение
+
+    // DI
+
+    UserService service = new UserService();    // Мы создаем и контролируем
+
+    // shop.jar
 }
