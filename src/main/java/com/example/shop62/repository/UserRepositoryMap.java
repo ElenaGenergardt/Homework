@@ -1,7 +1,7 @@
-package repository;
+package com.example.shop62.repository;
 
-import model.User;
-import model.Role;
+import com.example.shop62.model.Role;
+import com.example.shop62.model.User;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;
@@ -87,6 +87,4 @@ public class UserRepositoryMap implements UserRepository{
     public User delete(long id) {
         return memoryStorage.remove(id);
     }
-
-
 }

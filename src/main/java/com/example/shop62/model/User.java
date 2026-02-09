@@ -1,6 +1,7 @@
-package model;
+package com.example.shop62.model;
 
 import java.time.LocalDateTime;
+
 /**
  * Класс, представляющий пользователя.
  */
@@ -160,6 +161,4 @@ public class User {
     public void setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
     }
-
-
 }

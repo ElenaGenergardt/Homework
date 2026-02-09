@@ -1,5 +1,4 @@
-package model;
-
+package com.example.shop62.model;
 /**
  * Перечисление, представляющее роль пользователя.
  */

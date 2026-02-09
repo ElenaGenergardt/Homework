@@ -1,5 +1,4 @@
-package model;
-
+package com.example.shop62.model;
 /**
  * Класс, представляющий категорию товара.
  */
@@ -7,23 +6,25 @@ public class Category {
     /**
      * Уникальный идентификатор категории.
      */
-    private long id;
+    private Long id;
     /**
      * Название категории.
      */
     private String title;
+
     /**
      * Конструктор по умолчанию.
      */
     public Category() {
     }
+
     /**
      * Конструктор с параметрами.
      *
      * @param id    уникальный идентификатор категории.
      * @param title название категории.
      */
-    public Category(long id, String title) {
+    public Category(Long id, String title) {
         this.id = id;
         this.title = title;
     }
@@ -33,18 +34,19 @@ public class Category {
      *
      * @return уникальный идентификатор категории.
      */
-
-    public long getId() {
+    public Long getId() {
         return id;
     }
+
     /**
      * Устанавливает уникальный идентификатор категории.
      *
      * @param id уникальный идентификатор категории.
      */
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
+
     /**
      * Возвращает название категории.
      *

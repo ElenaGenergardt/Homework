@@ -1,6 +1,8 @@
-package model;
+package com.example.shop62.model;
+
 
 import java.math.BigDecimal;
+
 /**
  * Класс, представляющий товар.
  */

@@ -1,8 +1,9 @@
-package model;
+package com.example.shop62.model;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
+
 /**
  * Класс, представляющий заказ.
  */
@@ -10,7 +11,7 @@ public class Order {
     /**
      * Уникальный идентификатор заказа.
      */
-    private long id;
+    private Long id;
     /**
      * Пользователь, сделавший заказ.
      */
@@ -22,7 +23,7 @@ public class Order {
     /**
      * Дата и время создания заказа.
      */
-    private LocalDateTime createAt;
+    private LocalDateTime cratedAt;
     /**
      * Адрес доставки.
      */
@@ -34,6 +35,5 @@ public class Order {
     /**
      * Список позиций в заказе.
      */
-    private List<OrderItem> item;
-
+    private List<OrderItem> items;
 }
